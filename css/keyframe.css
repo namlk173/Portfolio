@@ -1,0 +1,34 @@
+@keyframes transform-edge-img1 {
+  0% {
+    left: 50px;
+    top: -20px;
+  }
+}
+
+@keyframes transform-edge-img2 {
+  0% {
+    right: 50px;
+    bottom: -20px;
+  }
+}
+
+@keyframes img-transform {
+  0% {
+    height: 380px;
+  }
+}
+
+@keyframes transform-percent-skill {
+  0% {
+    width: 0%;
+  }
+}
+
+@keyframes section-active {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
