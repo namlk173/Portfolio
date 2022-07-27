@@ -655,18 +655,48 @@ h3.my-profession {
 }
 
 .portfolio .portfolio-item {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
+  flex: 0 0 50%;
+  max-width: 50%;
   margin-bottom: 30px;
 }
 
 .portfolio .portfolio-item-inner {
+  position: relative;
   border: 6px solid var(--bg-black-100);
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
 }
-
+.portfolio .portfolio-item-inner .portfolio-desc{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.portfolio .portfolio-item-inner .portfolio-desc .title{
+  color: var(--text-black-900);
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.portfolio .portfolio-item-inner .portfolio-desc h4{
+  color: var(--text-black-900);
+  font-size: 24px;
+}
+.portfolio .portfolio-item-inner .portfolio-desc p{
+  color: var(--text-black-700);
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.portfolio .portfolio-item-inner:hover .portfolio-desc{
+  opacity: 1;
+}
+.portfolio .portfolio-item-inner:hover .portfolio-img{
+  opacity: 0.3;
+}
 .portfolio .portfolio-item-inner .portfolio-img img {
   width: 100%;
   display: block;
